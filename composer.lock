@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9adcd72649972a2d6fa3353df468a5e7",
-    "content-hash": "bebeeb7779bfe9b7337a44eadf137cda",
+    "hash": "2bf52af46424c2f35da9203482a63aad",
+    "content-hash": "c16b585705ad553a7cecb4fc82142cbf",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -65,6 +65,36 @@
                 "yii2"
             ],
             "time": "2016-03-11 16:56:15"
+        },
+        {
+            "name": "bower-asset/autosize",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jackmoore/autosize.git",
+                "reference": "1e94f8aa0e6dfa7b52217bd4527e1dfdf38ed364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jackmoore/autosize/zipball/1e94f8aa0e6dfa7b52217bd4527e1dfdf38ed364",
+                "reference": "1e94f8aa0e6dfa7b52217bd4527e1dfdf38ed364",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/autosize.js",
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Autosize is a small, stand-alone script to automatically adjust textarea height to fit text.",
+            "keywords": [
+                "form",
+                "textarea",
+                "ui"
+            ],
+            "time": "2016-01-26 08:31:38"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -423,6 +453,52 @@
                 "mailer"
             ],
             "time": "2016-05-11 12:36:48"
+        },
+        {
+            "name": "uran1980/yii2-textarea-autosize",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uran1980/yii2-textarea-autosize.git",
+                "reference": "9288d79c96285e07b5f0c70562916624130a95aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uran1980/yii2-textarea-autosize/zipball/9288d79c96285e07b5f0c70562916624130a95aa",
+                "reference": "9288d79c96285e07b5f0c70562916624130a95aa",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/autosize": "*",
+                "yiisoft/yii2": "~2"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "uran1980\\yii\\assets\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Yakovlev",
+                    "email": "uran1980@gmail.com",
+                    "homepage": "https://github.com/uran1980",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An Yii2 Textarea Autosize extension based on Autosize javascript library.",
+            "homepage": "https://github.com/uran1980/yii2-textarea-autosize",
+            "keywords": [
+                "javascript",
+                "textarea autosize",
+                "yii2",
+                "yii2-textarea-autosize"
+            ],
+            "time": "2016-04-26 20:45:56"
         },
         {
             "name": "yiisoft/yii2",
@@ -977,7 +1053,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "uran1980/yii2-textarea-autosize": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

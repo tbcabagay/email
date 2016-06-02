@@ -25,5 +25,6 @@ class AppAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
+        'uran1980\yii\assets\TextareaAutosizeAsset',
     ];
 }

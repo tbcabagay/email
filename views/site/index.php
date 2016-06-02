@@ -14,9 +14,11 @@ $this->title = 'UP Open University';
 
         <?php $form = ActiveForm::begin(); ?>
 
-        <?= $form->field($model, 'recipients')->textArea(['rows' => 3]) ?>
+        <?= $form->field($model, 'to')->textArea(['rows' => 1]) ?>
 
-        <?= $form->field($model, 'subject')->textInput() ?>
+        <?= $form->field($model, 'cc')->textArea(['rows' => 1]) ?>
+
+        <?= $form->field($model, 'subject')->textArea(['rows' => 1]) ?>
 
         <?= $form->field($model, 'body')->widget(CKEditor::className(), [
             'options' => ['rows' => 6],
